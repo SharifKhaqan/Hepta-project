@@ -1,0 +1,487 @@
+body,
+html {
+    height: 100%;
+    overflow-y: auto;
+}
+
+body {
+    background: #fff;
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #6c757d;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header-section {
+    background: url("../images/hero_3.jpg") ;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    /* Reduced height */
+}
+
+.navbar {
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo {
+    font-weight: 300;
+    font-size: 30px;
+    margin-left: 0;
+}
+
+.fullscreen-navigation.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.close-button {
+    font-size: 2rem;
+    color: black;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+
+.navbar-nav {
+    margin-right: 0;
+}
+
+.navbar-nav .nav-item {
+    font-weight: 300;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 1.65rem;
+    margin: 1rem 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link.active {
+    color: skyblue;
+}
+
+.navbar-nav .nav-link:hover {
+    color: skyblue;
+}
+
+.header-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    /* Reduced padding */
+}
+
+.header-hero h1 {
+    font-size: 4.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding-top: 100px;
+    /* Added padding at the top */
+}
+
+
+.header-hero p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    /* Reduced margin */
+}
+
+.main-seccond-page {
+    padding: 50px 0;
+}
+
+.main-seccond-wrapp {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    background-color: white;
+}
+.post-thumbnail{
+    border-radius: 0%;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.post-card {
+    margin-bottom: 30px;
+}
+
+.card-date {
+    color: #999;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #000;
+}
+
+/* Sidebar Styling */
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.sidebar-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.popular-post-item {
+    margin-bottom: 15px;
+}
+
+.popular-post-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.post-info h6 {
+    font-size: 14px;
+    color: #999;
+}
+
+.post-info h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.categories-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.categories-list li {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 30px;
+}
+
+.page-link {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-link:hover {
+    background-color: #f0f0f0;
+}
+
+
+.footer-section {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    margin: 0;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+
+}
+
+.footer-column .paragraph-color {
+    color: lightgray;
+}
+
+.footer-column .contact-detail {
+    color: lightgray;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    color: lightgray;
+}
+
+.footer-column p {
+    margin: 5px 0;
+    color: white;
+}
+
+.subscribe-form {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.email-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    background-color: transparent;
+    color: white;
+    padding: 8px 0;
+    font-size: 16px;
+    outline: none;
+}
+
+.email-input::placeholder {
+    color: lightgrey;
+    opacity: 1;
+}
+
+.email-input:focus {
+    border-bottom: 1px solid white;
+}
+
+.footer-line {
+    width: calc(100% + 40px);
+    height: 0;
+    border-top: 1px solid lightgrey;
+    margin-top: 80px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.copyright {
+    text-align: center;
+    color: lightgray;
+    margin: 0;
+    padding: 40px 0 10px 0;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+}
+
+.heart {
+    color: #6c757d;
+    font-size: 1.5em;
+}
+
+.colorlib-link {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.colorlib-link:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: -10px;
+    padding: 0 10px 40px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    font-size: 1rem;
+    color: lightgray;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        color: #000;
+    }
+
+    .fullscreen-navigation.show .navbar-nav {
+        justify-content: center;
+    }
+
+    .close-button {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .post-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .post-card {
+        width: 100%;
+    }
+
+    .popular-post-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .pagination button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .popular-post-item img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .subscribe-form input {
+        width: 50%;
+        border-bottom: 1px solid white;
+    }
+
+    .copyright {
+        font-size: 14px;
+        padding: 0 20px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .footer-line {
+        width: calc(90%);
+        margin: 40px auto;
+        border-top: 1px solid white;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+        gap: 10px;
+        padding-bottom: 30px;
+    }
+
+    .social-icons a {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+    .email-input {
+        font-size: 14px;
+        border-bottom: 1px solid white;
+    }
+
+    .subscribe-form input {
+        width: 50%;
+        border-bottom: 1px solid white;
+    }
+
+    .social-icons {
+        margin-top: 30px;
+        gap: 8px;
+    }
+
+    .footer-line {
+        width: calc(80%);
+        margin: 20px auto;
+        border-top: 1px solid white;
+    }
+
+    .copyright {
+        padding: 0 20px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .footer-section {
+        padding: 30px 10px;
+    }
+}
+

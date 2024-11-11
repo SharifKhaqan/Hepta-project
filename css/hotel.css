@@ -1,0 +1,787 @@
+body,
+html {
+    height: 100%;
+    overflow-y: auto;
+}
+
+body {
+    background: #fff;
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #6c757d;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header-section {
+    background: url("../images/hero_5.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    /* Reduced height */
+}
+
+.navbar {
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo {
+    font-weight: 300;
+    font-size: 30px;
+    margin-left: 0;
+}
+
+.fullscreen-navigation.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.close-button {
+    font-size: 2rem;
+    color: black;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+
+.navbar-nav {
+    margin-right: 0;
+}
+
+.navbar-nav .nav-item {
+    font-weight: 300;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 1.65rem;
+    margin: 1rem 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link.active {
+    color: skyblue;
+}
+
+.navbar-nav .nav-link:hover {
+    color: skyblue;
+}
+
+.header-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    /* Reduced padding */
+}
+
+.header-hero h1 {
+    font-size: 4.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding-top: 100px;
+    /* Added padding at the top */
+}
+
+
+.header-hero p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    /* Reduced margin */
+}
+
+.custom-section {
+    padding-top: 120px;
+    /* Adjust this value to increase the top padding */
+    padding-bottom: 60px;
+    /* Keep the bottom padding or adjust as needed */
+    background-color: white;
+}
+
+
+.custom-section h3 {
+    color: #000;
+}
+
+.custom-section h2 {
+    color: #000;
+}
+
+.custom-section .container {
+    padding: 0 15px;
+}
+
+.custom-section .heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    padding-top: 70px;
+}
+
+.custom-section .lead {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    padding-top: 10px;
+}
+
+.custom-section .ftco-img-flaticon {
+    position: relative;
+    text-align: center;
+}
+
+.custom-section .ftco-img-flaticon img {
+    max-width: 30%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.custom-section h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.custom-section p {
+    font-size: 1rem;
+}
+
+/* Padding for entire section */
+.table-section {
+    padding: 40px;
+    /* Keeps equal padding on top, left, and right */
+    padding-bottom: 120px;
+    /* Increases bottom padding */
+    background-color: white;
+}
+
+
+/* Content wrapper with padding for specific elements in the first row's second column */
+.table-section .row:first-child .col-lg-6:last-child .content-wrapper {
+    padding-left: 20px;
+    /* Adjust for equal left padding */
+}
+
+.table-section .table-heading {
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.table-section .table-paragraph {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.table-section .custom-button {
+    background-color: white;
+    color: #000;
+    border: 2px solid rgb(24, 209, 223);
+    /* Light blue border */
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.table-section .custom-button:hover {
+    background-color: rgb(24, 209, 223);
+    color: #000;
+}
+
+.table-section .table-img {
+    height: 700px;
+    /* Adjust height as needed */
+    width: 100%;
+    object-fit: cover;
+}
+
+.table-section .row:first-child {
+    margin-bottom: -20px;
+    /* Adjust this value to reduce space below the first row */
+}
+
+
+/* Ensure padding for the first row's second column */
+.table-section .row:first-child .col-lg-6:last-child .content-wrapper {
+    padding-left: 50px;
+    /* Adjust padding to your needs */
+}
+
+.table-section .row:nth-child(2) .col-lg-6:first-child .content-wrapper {
+    padding-left: 50px;
+    /* Adjust padding to your needs */
+}
+
+.table-section .row:nth-child(2) .col-lg-6:last-child {
+    padding-left: -40px;
+    /* Adjust this value as needed for left padding */
+}
+
+.slider-section {
+    padding-top: 1px;
+    /* Reduces top padding */
+    padding-bottom: 100px;
+    /* Keeps the bottom padding as it is */
+}
+
+
+.slider-section h1 {
+    color: #000;
+}
+
+.slider-section .heading {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.slider-section .lead {
+    font-size: 1.2rem;
+    margin-bottom: 70px;
+}
+
+.new-section {
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.text-container {
+    padding: 40px;
+    text-align: center;
+}
+
+.text-container .heading {
+    font-size: 4rem;
+    color: #000;
+}
+
+.text-container .description {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.card-item {
+    background-color: white;
+    border-radius: 0px;
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0;
+}
+
+.card-image-wrapper {
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-date {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 5px 0;
+}
+
+.card-heading {
+    font-size: 2rem;
+    color: #000;
+    margin: 5px 0;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.card-date,
+.card-heading,
+.card-description {
+    margin: 5px 0;
+}
+
+.footer-section {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    margin: 0;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+
+}
+
+.footer-column .paragraph-color {
+    color: lightgray;
+}
+
+.footer-column .contact-detail {
+    color: lightgray;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    color: lightgray;
+}
+
+.footer-column p {
+    margin: 5px 0;
+    color: white;
+}
+
+.subscribe-form {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.email-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    background-color: transparent;
+    color: white;
+    padding: 8px 0;
+    font-size: 16px;
+    outline: none;
+}
+
+.email-input::placeholder {
+    color: lightgrey;
+    opacity: 1;
+}
+
+.email-input:focus {
+    border-bottom: 1px solid white;
+}
+
+.footer-line {
+    width: calc(100% + 40px);
+    height: 0;
+    border-top: 1px solid lightgrey;
+    margin-top: 80px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.copyright {
+    text-align: center;
+    color: lightgray;
+    margin: 0;
+    padding: 40px 0 10px 0;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+}
+
+.heart {
+    color: #6c757d;
+    font-size: 1.5em;
+}
+
+.colorlib-link {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.colorlib-link:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: -10px;
+    padding: 0 10px 40px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    font-size: 1rem;
+    color: lightgray;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        color: #000;
+    }
+
+    .fullscreen-navigation.show .navbar-nav {
+        justify-content: center;
+    }
+
+    .close-button {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-section .heading {
+        font-size: 2rem;
+    }
+
+    .custom-section .lead {
+        font-size: 1rem;
+    }
+
+    .custom-section h3 {
+        font-size: 1.25rem;
+    }
+
+    .custom-section p {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-section .heading {
+        font-size: 2rem;
+    }
+
+    .custom-section .lead {
+        font-size: 1rem;
+    }
+
+    .custom-section h3 {
+        font-size: 1.25rem;
+    }
+
+    .custom-section p {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-section {
+        padding: 20px;
+        /* Decrease padding for smaller screens */
+    }
+
+    .table-section .table-heading {
+        font-size: 1.5rem;
+        /* Decrease heading font size */
+        text-align: left;
+        /* Align heading to the left */
+        padding-left: 5px;
+        /* Remove some left padding */
+        margin-bottom: 10px;
+        /* Adjust margin for better spacing */
+    }
+
+    .table-section .table-paragraph {
+        font-size: 1rem;
+        /* Adjust paragraph font size */
+        text-align: left;
+        /* Align paragraph to the left */
+        padding-left: 5px;
+        /* Remove some left padding */
+        margin-bottom: 10px;
+        /* Adjust margin for better spacing */
+    }
+
+    .table-section .custom-button {
+        display: inline-block;
+        margin-left: 5px;
+        /* Align button to the left with reduced padding */
+        padding: 8px 16px;
+        /* Adjust button padding */
+        font-size: 0.9rem;
+        /* Adjust button font size */
+        margin-bottom: 20px;
+        /* Add bottom margin for spacing */
+        padding-left: 5px;
+        /* Align button with the left side */
+    }
+
+    .table-section .table-img {
+        height: auto;
+        /* Allow image height to adjust based on content */
+        max-height: 300px;
+        /* Set a max-height to keep the image smaller */
+        width: 100%;
+        /* Ensure image fills container width */
+        object-fit: cover;
+        /* Ensure the image fits without distortion */
+        margin-bottom: 10px;
+        /* Add bottom margin for spacing */
+    }
+
+    /* Ensure both columns are stacked vertically and content is aligned left */
+    .table-section .row.align-items-center {
+        flex-direction: column;
+        text-align: left;
+        /* Align all content to the left */
+    }
+
+    .table-section .row .col-lg-6 {
+        padding-left: 0;
+        /* Remove left padding */
+        padding-right: 0;
+        /* Remove right padding */
+    }
+
+    /* Align content below the image, left-aligned */
+    .table-section .row .content-wrapper {
+        padding: 0 10px;
+        /* Add slight padding on the sides */
+        margin-top: 10px;
+        /* Add top margin for spacing */
+    }
+
+    /* Adjust padding for images */
+    .table-section .col-lg-6 .table-img {
+        padding-left: 5px;
+        /* Reduced left padding */
+        padding-right: 5px;
+        /* Reduced right padding */
+    }
+
+    /* Ensure proper alignment of the button */
+    .table-section .custom-button {
+        margin-left: 0;
+        /* Ensure button aligns left */
+        margin-top: 15px;
+        /* Give space between the paragraph and button */
+    }
+}
+
+
+/* Additional styling for larger tablets like iPads */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .table-section {
+        padding: 30px;
+        /* Slightly more padding for tablet screens */
+    }
+
+    .table-section .table-heading {
+        font-size: 1.8rem;
+        /* Adjust heading font size for tablets */
+    }
+
+    .table-section .table-paragraph {
+        font-size: 1.1rem;
+        /* Slightly larger font size for readability */
+    }
+
+    .table-section .custom-button {
+        padding: 10px 18px;
+        /* Adjust button padding */
+        font-size: 1rem;
+        /* Slightly larger button font size */
+    }
+
+    .table-section .table-img {
+        max-height: 500px;
+        /* Set a max-height for tablet screens */
+        padding-left: 15px;
+        padding-right: 15px;
+        /* Ensure equal padding on both sides */
+        margin: 0 auto;
+        /* Center-align images for tablet screens */
+    }
+
+    /* Center text content within tablet screen dimensions */
+    .table-section .row .content-wrapper {
+        padding: 15px;
+        /* Adjust padding for better readability */
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-section .heading {
+        font-size: 1.5rem;
+    }
+
+    .slider-section .lead {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .subscribe-form input {
+        width: 50%;
+        border-bottom: 1px solid white;
+    }
+
+    .copyright {
+        font-size: 14px;
+        padding: 0 20px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .footer-line {
+        width: calc(90%);
+        margin: 40px auto;
+        border-top: 1px solid white;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+        gap: 10px;
+        padding-bottom: 30px;
+    }
+
+    .social-icons a {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+    .email-input {
+        font-size: 14px;
+        border-bottom: 1px solid white;
+    }
+
+    .subscribe-form input {
+        width: 50%;
+        border-bottom: 1px solid white;
+    }
+
+    .social-icons {
+        margin-top: 30px;
+        gap: 8px;
+    }
+
+    .footer-line {
+        width: calc(80%);
+        margin: 20px auto;
+        border-top: 1px solid white;
+    }
+
+    .copyright {
+        padding: 0 20px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .footer-section {
+        padding: 30px 10px;
+    }
+}
